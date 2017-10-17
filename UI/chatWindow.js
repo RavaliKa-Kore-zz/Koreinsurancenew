@@ -627,8 +627,16 @@ function koreBotChat() {
     };
 
     chatWindow.prototype.bindEvents = function () {
+         
+
         var me = this;
         var _chatContainer = me.config.chatContainer;
+        _chatContainer.on('click', '.RemoveBtn', function (event) {
+            $( ".RemoveBtn" ).remove();
+            console.log("<><><><<><>");
+        });
+
+
         _chatContainer.draggable({
             handle: _chatContainer.find(".kore-chat-header .header-title"),
             containment: "window",
