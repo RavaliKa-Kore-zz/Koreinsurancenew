@@ -313,7 +313,7 @@ ul.chat-container li.fromCurrentUser .messageBubble{
     padding: 12px 15px;
     max-width: 70%;
     font-size: 16px;
-    background-color: #3292FF;
+    background-color: #009DAB;
     color: white;
     border-radius: 12px;
     border-bottom-right-radius: 2px;
@@ -1161,4 +1161,120 @@ ul.chat-container li.quickReplies {
 }
 .hide {
     display: none;
+}
+/* Pie chart css */
+.piechart .piechartDiv {
+    display: block;
+    /*border: 13px solid #F1F0F0;*/
+    border-radius: 9px;
+    clear: both;
+    width: 317px;
+}
+.piechart .messageBubble.pieChart {
+    margin-bottom: 10px;
+}
+.piechart .profile-photo {
+    top: 65px !important;
+}
+
+/* table template chart css */
+.tablechart .tablechartDiv {
+    clear: both;
+    left: -30px;
+    position: relative;
+    top: 18px;
+    border: 2px solid #d6d6d6;
+    border-radius: 9px;
+    margin: 0px -40px 13px -23px;
+}
+.tablechartDiv table {
+    border-collapse: collapse;
+}
+.tablechartDiv tr {
+    border-bottom: 1px solid #dfdfdf;
+}
+.tablechartDiv tr.headerTitle {
+    border-bottom: 2px solid #d6d6d6;
+}
+.tablechart .tablechartDiv tr.bottomThickBorder{
+    border-bottom: 3px solid #d6d6d6;
+}
+.tablechart .profile-photo {
+    top: 42px !important;
+}
+.kore-chat-window.expanded .tablechart .profile-photo {
+    top: 30px !important;
+}
+.tablechart .tablechartDiv table {
+    width: 100%;
+}
+.tablechart .tablechartDiv table td, .tablechart .tablechartDiv table th{
+    padding: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px !important;
+}
+/*.tablechart .tablechartDiv table .addBottomBorder{
+    border-bottom: 1px solid #dfdfdf;
+}
+.tablechart .tablechartDiv table .addTopBorder{
+    border-top: 2px solid #d6d6d6;
+}
+.tablechart .tablechartDiv table .bottomThickBorder{
+    border-bottom: 3px solid #d6d6d6;
+}
+*/
+.noPadding {
+    padding: 0 !important;
+}
+
+/* Bar chart css */
+.barchart .barchartDiv {
+    display: block;
+    /*border: 13px solid #F1F0F0;*/
+    border-radius: 9px;
+    clear: both;
+    width: 317px;
+}
+.barchart .messageBubble.barchart {
+    margin-bottom: 10px;
+}
+.barchart .profile-photo {
+    top: 65px !important;
+}
+
+/* line chart css */
+.linechart .linechartDiv {
+    display: block;
+    /*border: 13px solid #F1F0F0;*/
+    border-radius: 9px;
+    clear: both;
+    width: 317px;
+}
+.linechart .messageBubble.linechart {
+    margin-bottom: 10px;
+}
+.linechart .profile-photo {
+    top: 65px !important;
+}
+
+/* Droppable attachment css */
+.attachmentDropoverBlock{
+    position: inherit;
+    background-color: transparent;
+    height: 0px;
+    width: 94%;
+    bottom: 0px;
+    border-style: dashed;
+    border-color: #009dab;
+    display: none;
+}
+.kore-chat-window.dragover.attachmentDropoverBlock {
+    height: 175px;
+    display: block;
+}
+.kore-chat-window.dragover {
+    border: 2px solid #009dab;
+    border-style: dashed;
 }
